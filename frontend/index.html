@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@
 <script>
 async function sendSignal(signal){
   try {
-    const res = await fetch('http://localhost:5000/api/trade', {
+    const res = await fetch('http://localhost:5000/api/trade', {  // Update to your server URL
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({signal: signal})
